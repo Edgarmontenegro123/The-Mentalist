@@ -1,6 +1,6 @@
 let random = Math.floor(Math.random() * (101 - 1) + 1);
 let counter = 0;
-let maxAttempts = 3
+let maxAttempts = 5
 function mentalist() {
     const newDiv = document.getElementById('newDiv')
     let number = document.getElementById('number').value;
