@@ -37,7 +37,7 @@ function mentalist() {
 
         counter++
 
-    if(counter >= maxAttempts) {
+    if(counter > maxAttempts) {
         Swal.fire({
             text: `I'm sorry, You have no more attempts, the secret number was ${random} 😭`,
             icon: 'error'
