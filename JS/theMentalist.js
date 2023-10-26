@@ -1,5 +1,6 @@
 let random = Math.floor(Math.random() * (101 - 1) + 1);
 let counter = 0;
+let maxAttempts = 3
 function mentalist() {
     const newDiv = document.getElementById('newDiv')
     let number = document.getElementById('number').value;
@@ -36,12 +37,10 @@ function mentalist() {
 
         counter++
 
-    if(counter >= 3) {
+    if(counter >= maxAttempts) {
         Swal.fire({
             text: `I'm sorry, You have no more attempts, the secret number was ${random} 😭`,
             icon: 'error'
         })
     }
 }
-
-
